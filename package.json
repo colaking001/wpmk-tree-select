@@ -1,13 +1,16 @@
 {
   "name": "wpmk-tree-select",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "lib/tree-select.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name tree-select --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-ui": "^2.15.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
@@ -20,5 +23,8 @@
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "keyword": "tree-select tree select",
+  "description": "基于element组件中Select 选择器和Tree 树形控件扩展出来的树结构数据下拉选择器",
+  "author": "test"
 }
